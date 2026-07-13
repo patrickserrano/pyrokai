@@ -1,0 +1,74 @@
+---
+title: App themes
+description: Install Pyrokai in fourteen apps.
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+All files live in [`themes/`](https://github.com/patrickserrano/pyrokai/tree/main/themes) in the
+repo. Syntax highlighting is consistent everywhere it applies: **string** → yellow ·
+**number/constant** → purple · **keyword/storage** → magenta · **function** → green ·
+**class/type** → cyan · **parameter** → orange · **operator/invalid** → red ·
+**comment** → text/subtle.
+
+<CardGrid>
+	<Card title="VS Code" icon="vscode">
+		Copy [`themes/vscode`](https://github.com/patrickserrano/pyrokai/tree/main/themes/vscode) to
+		`~/.vscode/extensions/pyrokai/`, reload, then pick **Pyrokai Dark** / **Pyrokai Light**.
+	</Card>
+	<Card title="Xcode" icon="apple">
+		Copy [`.xccolortheme` files](https://github.com/patrickserrano/pyrokai/tree/main/themes/xcode)
+		into `~/Library/Developer/Xcode/UserData/FontAndColorThemes/`.
+	</Card>
+	<Card title="Ghostty" icon="desktop">
+		Copy [`pyrokai` / `pyrokai-light`](https://github.com/patrickserrano/pyrokai/tree/main/themes/ghostty)
+		into `~/.config/ghostty/themes/`, then set `theme = pyrokai` in `~/.config/ghostty/config`.
+	</Card>
+	<Card title="cmux" icon="desktop">
+		cmux is Ghostty-based and reads from the same place. Copy
+		[the theme file](https://github.com/patrickserrano/pyrokai/tree/main/themes/cmux) into
+		`~/.config/ghostty/themes/`.
+	</Card>
+	<Card title="Claude Code" icon="rocket">
+		Copy [`pyrokai-dark.json` / `pyrokai-light.json`](https://github.com/patrickserrano/pyrokai/tree/main/themes/claude-code)
+		into `~/.claude/themes/`, then select `custom:pyrokai-dark` via `/config`.
+		Requires Claude Code v2.1.118+.
+	</Card>
+	<Card title="Codex" icon="rocket">
+		See [`themes/codex/README.txt`](https://github.com/patrickserrano/pyrokai/tree/main/themes/codex).
+		CLI: drop `Pyrokai.tmTheme` into `~/.codex/themes/` and set `tui.theme = "pyrokai"`. App:
+		paste the `codex-theme-v1:...` string via Settings → Appearance → Import.
+	</Card>
+	<Card title="JetBrains Rider" icon="jetbrains">
+		Copy [`.icls` files](https://github.com/patrickserrano/pyrokai/tree/main/themes/rider) into
+		`~/Library/Application Support/JetBrains/Rider<version>/colors/`.
+	</Card>
+	<Card title="Visual Studio" icon="window">
+		Import [`.vssettings` files](https://github.com/patrickserrano/pyrokai/tree/main/themes/visual-studio)
+		via Tools → Import and Export Settings (Fonts & Colors only).
+	</Card>
+	<Card title="TextMate" icon="pencil">
+		Double-click a [`.tmTheme` file](https://github.com/patrickserrano/pyrokai/tree/main/themes/textmate)
+		to install, or copy into `~/Library/Application Support/TextMate/Themes/`.
+	</Card>
+	<Card title="iTerm2" icon="desktop">
+		Double-click an [`.itermcolors` file](https://github.com/patrickserrano/pyrokai/tree/main/themes/iterm2)
+		to install, or import via Preferences → Profiles → Colors → Color Presets.
+	</Card>
+	<Card title="Terminal.app" icon="apple">
+		Double-click a [`.terminal` file](https://github.com/patrickserrano/pyrokai/tree/main/themes/terminal-app)
+		to install, then set as default under Terminal → Settings → Profiles.
+	</Card>
+	<Card title="Windows Terminal" icon="window">
+		Paste both scheme objects from [`pyrokai-schemes.json`](https://github.com/patrickserrano/pyrokai/tree/main/themes/windows-terminal)
+		into the `"schemes"` array in `settings.json`.
+	</Card>
+	<Card title="Slack" icon="slack">
+		Preferences → Themes → Custom → paste a hex string from
+		[`pyrokai-slack-theme.txt`](https://github.com/patrickserrano/pyrokai/tree/main/themes/slack).
+	</Card>
+	<Card title="Obsidian" icon="notes">
+		Copy [`themes/obsidian/Pyrokai`](https://github.com/patrickserrano/pyrokai/tree/main/themes/obsidian/Pyrokai)
+		into `<vault>/.obsidian/themes/Pyrokai/`, then enable it under Settings → Appearance → Themes.
+	</Card>
+</CardGrid>

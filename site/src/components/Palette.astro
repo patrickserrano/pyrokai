@@ -1,0 +1,104 @@
+---
+const mono = [{"label": "black", "hex": "#0d0b0a"}, {"label": "950", "hex": "#151312"}, {"label": "900", "hex": "#242120"}, {"label": "850", "hex": "#312d2b"}, {"label": "800", "hex": "#3c3836"}, {"label": "700", "hex": "#524e4c"}, {"label": "600", "hex": "#696463"}, {"label": "500", "hex": "#807c7a"}, {"label": "400", "hex": "#999593"}, {"label": "300", "hex": "#b4afad"}, {"label": "200", "hex": "#cdc9c7"}, {"label": "150", "hex": "#d8d4d3"}, {"label": "100", "hex": "#e4e0de"}, {"label": "50", "hex": "#f0edec"}, {"label": "paper", "hex": "#faf6f5"}];
+const accents = [{"hue": "red", "steps": [{"label": "50", "hex": "#ffeaed"}, {"label": "100", "hex": "#ffd2d9"}, {"label": "150", "hex": "#ffbfc9"}, {"label": "200", "hex": "#ffaab9"}, {"label": "300", "hex": "#fa8099"}, {"label": "400", "hex": "#ec6785"}, {"label": "500", "hex": "#d45774"}, {"label": "600", "hex": "#b84963"}, {"label": "700", "hex": "#943c50"}, {"label": "800", "hex": "#722d3d"}, {"label": "850", "hex": "#612734"}, {"label": "900", "hex": "#4f202a"}, {"label": "950", "hex": "#3b161e"}]}, {"hue": "orange", "steps": [{"label": "50", "hex": "#ffece3"}, {"label": "100", "hex": "#ffd6c2"}, {"label": "150", "hex": "#ffc3a7"}, {"label": "200", "hex": "#ffb08b"}, {"label": "300", "hex": "#f88b54"}, {"label": "400", "hex": "#ea7332"}, {"label": "500", "hex": "#d36221"}, {"label": "600", "hex": "#b65318"}, {"label": "700", "hex": "#924417"}, {"label": "800", "hex": "#713411"}, {"label": "850", "hex": "#612c0f"}, {"label": "900", "hex": "#4e240e"}, {"label": "950", "hex": "#3a1a09"}]}, {"hue": "yellow", "steps": [{"label": "50", "hex": "#fcf0cf"}, {"label": "100", "hex": "#f3dea7"}, {"label": "150", "hex": "#ead189"}, {"label": "200", "hex": "#e2c369"}, {"label": "300", "hex": "#d0a70e"}, {"label": "400", "hex": "#bb9500"}, {"label": "500", "hex": "#a58300"}, {"label": "600", "hex": "#8e7100"}, {"label": "700", "hex": "#735a00"}, {"label": "800", "hex": "#594500"}, {"label": "850", "hex": "#4c3b00"}, {"label": "900", "hex": "#3e3000"}, {"label": "950", "hex": "#2e2200"}]}, {"hue": "green", "steps": [{"label": "50", "hex": "#e6f7d8"}, {"label": "100", "hex": "#cfeab6"}, {"label": "150", "hex": "#bde09e"}, {"label": "200", "hex": "#acd585"}, {"label": "300", "hex": "#8bbf53"}, {"label": "400", "hex": "#75ad2f"}, {"label": "500", "hex": "#659a1b"}, {"label": "600", "hex": "#568413"}, {"label": "700", "hex": "#456a13"}, {"label": "800", "hex": "#35520f"}, {"label": "850", "hex": "#2d460e"}, {"label": "900", "hex": "#24390d"}, {"label": "950", "hex": "#1a2908"}]}, {"hue": "cyan", "steps": [{"label": "50", "hex": "#cefaff"}, {"label": "100", "hex": "#a3eff8"}, {"label": "150", "hex": "#81e5f1"}, {"label": "200", "hex": "#58dbea"}, {"label": "300", "hex": "#00c3d3"}, {"label": "400", "hex": "#00aebd"}, {"label": "500", "hex": "#009aa7"}, {"label": "600", "hex": "#008490"}, {"label": "700", "hex": "#006a74"}, {"label": "800", "hex": "#00525a"}, {"label": "850", "hex": "#00464d"}, {"label": "900", "hex": "#00393f"}, {"label": "950", "hex": "#002a2e"}]}, {"hue": "blue", "steps": [{"label": "50", "hex": "#e5f2ff"}, {"label": "100", "hex": "#c7e3ff"}, {"label": "150", "hex": "#aed8ff"}, {"label": "200", "hex": "#95ccff"}, {"label": "300", "hex": "#5bb3ff"}, {"label": "400", "hex": "#2aa0f9"}, {"label": "500", "hex": "#128de2"}, {"label": "600", "hex": "#0979c4"}, {"label": "700", "hex": "#0f619d"}, {"label": "800", "hex": "#0c4b79"}, {"label": "850", "hex": "#0c4067"}, {"label": "900", "hex": "#0c3454"}, {"label": "950", "hex": "#08263e"}]}, {"hue": "purple", "steps": [{"label": "50", "hex": "#f0eeff"}, {"label": "100", "hex": "#dfdbff"}, {"label": "150", "hex": "#d2cbff"}, {"label": "200", "hex": "#c5bbff"}, {"label": "300", "hex": "#ad9bff"}, {"label": "400", "hex": "#9b84f7"}, {"label": "500", "hex": "#8972e0"}, {"label": "600", "hex": "#7662c2"}, {"label": "700", "hex": "#5f4f9b"}, {"label": "800", "hex": "#483c78"}, {"label": "850", "hex": "#3e3366"}, {"label": "900", "hex": "#322a53"}, {"label": "950", "hex": "#241e3e"}]}, {"hue": "magenta", "steps": [{"label": "50", "hex": "#ffeaf0"}, {"label": "100", "hex": "#ffd1df"}, {"label": "150", "hex": "#ffbdd2"}, {"label": "200", "hex": "#ffa8c5"}, {"label": "300", "hex": "#f681ac"}, {"label": "400", "hex": "#e76899"}, {"label": "500", "hex": "#d05787"}, {"label": "600", "hex": "#b44a74"}, {"label": "700", "hex": "#913c5d"}, {"label": "800", "hex": "#702e47"}, {"label": "850", "hex": "#5f273d"}, {"label": "900", "hex": "#4e2031"}, {"label": "950", "hex": "#3a1724"}]}];
+const semantic = {"Dark": [{"label": "bg", "hex": "#151312"}, {"label": "bg-elevated", "hex": "#242120"}, {"label": "surface", "hex": "#312d2b"}, {"label": "border", "hex": "#3c3836"}, {"label": "border-strong", "hex": "#524e4c"}, {"label": "text-subtle", "hex": "#696463"}, {"label": "text-muted", "hex": "#999593"}, {"label": "text", "hex": "#faf6f5"}, {"label": "re", "hex": "#ec6785"}, {"label": "or", "hex": "#ea7332"}, {"label": "ye", "hex": "#bb9500"}, {"label": "gr", "hex": "#75ad2f"}, {"label": "cy", "hex": "#00aebd"}, {"label": "bl", "hex": "#2aa0f9"}, {"label": "pu", "hex": "#9b84f7"}, {"label": "ma", "hex": "#e76899"}], "Light": [{"label": "bg", "hex": "#faf6f5"}, {"label": "bg-elevated", "hex": "#f0edec"}, {"label": "surface", "hex": "#e4e0de"}, {"label": "border", "hex": "#cdc9c7"}, {"label": "border-strong", "hex": "#b4afad"}, {"label": "text-subtle", "hex": "#999593"}, {"label": "text-muted", "hex": "#807c7a"}, {"label": "text", "hex": "#242120"}, {"label": "re", "hex": "#b84963"}, {"label": "or", "hex": "#b65318"}, {"label": "ye", "hex": "#8e7100"}, {"label": "gr", "hex": "#568413"}, {"label": "cy", "hex": "#008490"}, {"label": "bl", "hex": "#0979c4"}, {"label": "pu", "hex": "#7662c2"}, {"label": "ma", "hex": "#b44a74"}]};
+
+function relLuminance(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  const [r, g, b] = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) => {
+    const s = c / 255;
+    return s <= 0.04045 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+function labelColor(hex) {
+  return relLuminance(hex) > 0.4 ? '#1b1615' : '#fbf3f2';
+}
+---
+
+<div class="pk-block">
+  <h2>Base <code>15 steps</code></h2>
+  <p class="pk-hint">Fixed hue ~25&deg; (warm), near-zero chroma, uniform OKLCH lightness from black to paper.</p>
+  <div class="pk-row" style={{ gridTemplateColumns: `repeat(${mono.length}, minmax(56px, 1fr))` }}>
+    {mono.map((s) => (
+      <div class="pk-swatch" style={{ background: s.hex, color: labelColor(s.hex) }}>
+        <span class="pk-step">{s.label}</span>
+        <span class="pk-hex">{s.hex}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div class="pk-block">
+  <h2>Accents <code>8 hues &times; 13 steps</code></h2>
+  <p class="pk-hint">Fixed hue and chroma per family, gamut-clipped at the extremes.</p>
+  {accents.map((a) => (
+    <div class="pk-accent-row">
+      <div class="pk-accent-label">{a.hue}</div>
+      <div class="pk-row" style={{ gridTemplateColumns: `repeat(${a.steps.length}, minmax(48px, 1fr))` }}>
+        {a.steps.map((s) => (
+          <div class="pk-swatch pk-swatch--sm" style={{ background: s.hex, color: labelColor(s.hex) }}>
+            <span class="pk-step">{s.label}</span>
+            <span class="pk-hex">{s.hex}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
+
+<div class="pk-block">
+  <h2>Semantic tokens <code>16 &times; 2 modes</code></h2>
+  <p class="pk-hint">8 neutral roles + 8 accent aliases, resolved per mode.</p>
+  <div class="pk-semantic-cols">
+    {Object.entries(semantic).map(([mode, tokens]) => (
+      <div class="pk-semantic-col">
+        <h3>{mode}</h3>
+        <div class="pk-sem-grid">
+          {tokens.map((t) => (
+            <div class="pk-swatch pk-swatch--sm" style={{ background: t.hex, color: labelColor(t.hex) }}>
+              <span class="pk-step">{t.label}</span>
+              <span class="pk-hex">{t.hex}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .pk-row {
+    display: grid; gap: 6px; margin: 0 0 8px;
+    overflow-x: auto; padding-bottom: 2px;
+  }
+  .pk-block { margin: 2rem 0 2.5rem; }
+  .pk-hint { color: var(--sl-color-gray-3); font-size: var(--sl-text-sm); margin: 0 0 1rem; }
+  .pk-swatch {
+    position: relative; height: 76px; border-radius: 8px; padding: 8px 10px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    font-family: var(--__sl-font-mono); overflow: hidden;
+  }
+  .pk-swatch--sm { height: 56px; border-radius: 6px; padding: 6px 8px; }
+  .pk-step { font-size: 11px; opacity: 0.85; }
+  .pk-hex { font-size: 10.5px; opacity: 0.75; font-variant-numeric: tabular-nums; }
+  .pk-accent-row { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .pk-accent-label {
+    width: 74px; flex-shrink: 0; font-family: var(--__sl-font-mono); font-size: 12px;
+    color: var(--sl-color-gray-3); text-transform: capitalize;
+  }
+  .pk-accent-row .pk-row { flex: 1; margin-bottom: 0; }
+  .pk-semantic-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .pk-semantic-col {
+    background: var(--sl-color-bg-nav); border: 1px solid var(--sl-color-hairline);
+    border-radius: 10px; padding: 16px;
+  }
+  .pk-semantic-col h3 {
+    margin: 0 0 10px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--sl-color-gray-3); border: none; padding: 0;
+  }
+  .pk-sem-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  @media (max-width: 640px) {
+    .pk-semantic-cols { grid-template-columns: 1fr; }
+  }
+</style>

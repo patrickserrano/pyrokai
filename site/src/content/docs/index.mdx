@@ -1,0 +1,52 @@
+---
+title: Pyrokai
+description: Monokai's accent family, warm-shifted, expanded into a Flexoki-shaped tonal system.
+template: splash
+hero:
+  tagline: Monokai's accent family, warm-shifted, expanded into a Flexoki-shaped tonal system. Eight hues &times; thirteen steps over a fifteen-step near-monochrome base — generated in OKLCH, gamut-mapped to sRGB.
+  actions:
+    - text: Browse the palette
+      link: /pyrokai/palette/
+      icon: right-arrow
+    - text: Get the app themes
+      link: /pyrokai/app-themes/
+      icon: document
+      variant: minimal
+    - text: View on GitHub
+      link: https://github.com/patrickserrano/pyrokai
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div style="display:flex; gap:6px; max-width:640px; margin: 0 auto 3rem;">
+  <div style="flex:1; height:56px; border-radius:6px; background:#ec6785"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#ea7332"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#bb9500"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#75ad2f"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#00aebd"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#2aa0f9"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#9b84f7"></div>
+  <div style="flex:1; height:56px; border-radius:6px; background:#e76899"></div>
+</div>
+
+## Inside
+
+<CardGrid stagger>
+	<Card title="Primitives" icon="database">
+		119 color variables — 8 hues &times; 13 steps over a 15-step near-monochrome base. See the
+		[full palette](/pyrokai/palette/).
+	</Card>
+	<Card title="Semantic" icon="setting">
+		16 tokens — `bg`, `surface`, `text`, `accent`, `link`, `success`, `warning`, `danger`, and
+		more — resolved for Dark and Light modes.
+	</Card>
+	<Card title="Ready-made themes" icon="document">
+		Fourteen apps covered out of the box — see [app themes](/pyrokai/app-themes/) for install
+		steps.
+	</Card>
+	<Card title="Mechanics" icon="information">
+		Fixed hue, even OKLCH lightness. Dark mode uses each accent's 400 step; Light mode uses 600.
+	</Card>
+</CardGrid>
