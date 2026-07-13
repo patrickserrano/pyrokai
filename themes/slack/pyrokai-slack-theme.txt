@@ -1,0 +1,6 @@
+Pyrokai — Slack custom theme
+
+Slack > Preferences > Themes > scroll to bottom > Custom > paste one of these strings:
+
+Dark:  #242120,#312d2b,#ea7332,#151312,#312d2b,#999593,#75ad2f,#ec6785
+Light: #f0edec,#e4e0de,#b65318,#faf6f5,#e4e0de,#807c7a,#568413,#b84963
