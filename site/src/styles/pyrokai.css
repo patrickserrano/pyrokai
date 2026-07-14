@@ -1,4 +1,4 @@
-:root {
+	:root {
 		--sl-color-white: #faf6f5;
 		--sl-color-gray-1: #faf6f5;
 		--sl-color-gray-2: #999593;
@@ -24,18 +24,18 @@
 		--sl-color-red: #ec6785;
 		--sl-color-red-high: #ffbfc9;
 
-		--sl-color-accent-low: #612c0f;
-		--sl-color-accent: #ea7332;
-		--sl-color-accent-high: #ffc3a7;
+		--sl-color-accent-low: #00464d;
+		--sl-color-accent: #00aebd;
+		--sl-color-accent-high: #81e5f1;
 
 		--sl-color-text: #faf6f5;
-		--sl-color-text-accent: #ffc3a7;
+		--sl-color-text-accent: #81e5f1;
 		--sl-color-text-invert: #151312;
 		--sl-color-bg: #151312;
 		--sl-color-bg-nav: #242120;
 		--sl-color-bg-sidebar: #242120;
 		--sl-color-bg-inline-code: #312d2b;
-		--sl-color-bg-accent: #ffc3a7;
+		--sl-color-bg-accent: #81e5f1;
 		--sl-color-hairline-light: #3c3836;
 		--sl-color-hairline: #3c3836;
 		--sl-color-hairline-shade: #524e4c;
@@ -68,18 +68,18 @@
 		--sl-color-red: #b84963;
 		--sl-color-red-high: #612734;
 
-		--sl-color-accent-low: #ffd6c2;
-		--sl-color-accent: #b65318;
-		--sl-color-accent-high: #612c0f;
+		--sl-color-accent-low: #a3eff8;
+		--sl-color-accent: #008490;
+		--sl-color-accent-high: #00464d;
 
 		--sl-color-text: #242120;
-		--sl-color-text-accent: #b65318;
+		--sl-color-text-accent: #008490;
 		--sl-color-text-invert: #faf6f5;
 		--sl-color-bg: #faf6f5;
 		--sl-color-bg-nav: #f0edec;
 		--sl-color-bg-sidebar: #faf6f5;
 		--sl-color-bg-inline-code: #e4e0de;
-		--sl-color-bg-accent: #b65318;
+		--sl-color-bg-accent: #008490;
 		--sl-color-hairline-light: #cdc9c7;
 		--sl-color-hairline: #cdc9c7;
 		--sl-color-hairline-shade: #b4afad;
@@ -88,4 +88,21 @@
 :root {
 	--sl-font: 'Inter Variable', var(--sl-font-system);
 	--sl-font-mono: 'JetBrains Mono', var(--sl-font-system-mono);
+}
+
+/* Starlight's Hero reserves a 7fr/4fr grid + left-aligns text at desktop
+   widths to make room for a hero image. We have no hero image, so force it
+   back to a single centered column at all widths (unlayered — beats
+   Starlight's @layer starlight.core rules regardless of source order). */
+.hero {
+	grid-template-columns: 100%;
+}
+.hero .stack {
+	text-align: center;
+}
+.hero .copy {
+	align-items: center;
+}
+.hero .actions {
+	justify-content: center;
 }
