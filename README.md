@@ -14,6 +14,10 @@ descendant of Monokai's classic accent palette.
   Rider, Visual Studio, TextMate, iTerm2, Terminal.app, Windows Terminal, Slack, and Obsidian —
   see [`themes/`](themes/).
 - Showcase site built with [Astro Starlight](https://starlight.astro.build/) — see [`site/`](site/).
+- Published to the [VS Code Marketplace](https://marketplace.visualstudio.com/), [Open VSX](https://open-vsx.org/),
+  [JetBrains Marketplace](https://plugins.jetbrains.com/) (see [`jetbrains-plugin/`](jetbrains-plugin/)),
+  [Obsidian community themes](https://github.com/patrickserrano/obsidian-pyrokai), and
+  [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes).
 
 ---
 

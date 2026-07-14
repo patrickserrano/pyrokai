@@ -3,12 +3,41 @@
   "displayName": "Pyrokai",
   "description": "Monokai's accent family, warm-shifted, expanded into a Flexoki-shaped tonal system.",
   "version": "1.0.0",
+  "publisher": "patrickserrano",
+  "author": {
+    "name": "Patrick Serrano",
+    "url": "https://patrickserrano.com"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "light theme",
+    "monokai",
+    "flexoki",
+    "oklch"
+  ],
+  "galleryBanner": {
+    "color": "#151312",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickserrano/pyrokai.git",
+    "directory": "themes/vscode"
+  },
+  "homepage": "https://patrickserrano.github.io/pyrokai/",
+  "bugs": {
+    "url": "https://github.com/patrickserrano/pyrokai/issues"
+  },
   "contributes": {
     "themes": [
       {

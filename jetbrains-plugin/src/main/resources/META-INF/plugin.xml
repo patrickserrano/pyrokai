@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.patrickserrano.pyrokai</id>
+    <name>Pyrokai</name>
+    <vendor email="hello@patrickserrano.com" url="https://patrickserrano.com">Patrick Serrano</vendor>
+    <category>UI</category>
+    <depends>com.intellij.modules.platform</depends>
+
+    <description><![CDATA[
+        <p>Monokai's accent family, warm-shifted, expanded into a Flexoki-shaped tonal system.
+        Eight hues &times; thirteen steps over a fifteen-step near-monochrome base &mdash;
+        generated in OKLCH, gamut-mapped to sRGB.</p>
+        <p>Adds <b>Pyrokai Dark</b> and <b>Pyrokai Light</b> editor color schemes. Select under
+        Settings &rarr; Editor &rarr; Color Scheme.</p>
+        <p>Full palette and matching themes for VS Code, Xcode, Ghostty, Slack, Obsidian, and
+        more: <a href="https://patrickserrano.github.io/pyrokai/">patrickserrano.github.io/pyrokai</a></p>
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <bundledColorScheme path="colorSchemes/Pyrokai_Dark"/>
+        <bundledColorScheme path="colorSchemes/Pyrokai_Light"/>
+    </extensions>
+</idea-plugin>

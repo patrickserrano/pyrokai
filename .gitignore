@@ -3,3 +3,8 @@ node_modules/
 dist/
 .astro/
 *.log
+*.vsix
+jetbrains-plugin/.gradle/
+jetbrains-plugin/build/
+jetbrains-plugin/.idea/
+jetbrains-plugin/.intellijPlatform/
