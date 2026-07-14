@@ -23,6 +23,10 @@ export default defineConfig({
 				{ label: 'Palette', slug: 'palette' },
 				{ label: 'App themes', slug: 'app-themes' },
 			],
+			components: {
+				ThemeProvider: './src/components/ThemeProvider.astro',
+				ThemeSelect: './src/components/ThemeSelect.astro',
+			},
 		}),
 	],
 });
