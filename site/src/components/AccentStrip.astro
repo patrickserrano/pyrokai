@@ -1,0 +1,24 @@
+---
+const colors = ['#ec6785', '#ea7332', '#bb9500', '#75ad2f', '#00aebd', '#2aa0f9', '#9b84f7', '#e76899'];
+---
+
+<div class="pk-strip">
+  {colors.map((hex) => (
+    <div class="pk-swatch" style={{ background: hex }}></div>
+  ))}
+</div>
+
+<style>
+  .pk-strip {
+    display: flex;
+    gap: 6px;
+    max-width: 640px;
+    margin: 0 auto 3rem;
+  }
+  .pk-swatch {
+    flex: 1;
+    height: 56px;
+    border-radius: 6px;
+    margin-top: 0;
+  }
+</style>
