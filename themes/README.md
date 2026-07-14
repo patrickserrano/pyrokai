@@ -57,3 +57,7 @@ Dark or Light hex string.
 
 **Obsidian** — `themes/obsidian/Pyrokai/`. Copy the folder into
 `<vault>/.obsidian/themes/Pyrokai/`, then enable "Pyrokai" under Settings → Appearance → Themes.
+
+---
+
+Made by [Patrick Serrano](https://patrickserrano.com) at [Pixelfox Studio](https://pixelfoxstudio.com).

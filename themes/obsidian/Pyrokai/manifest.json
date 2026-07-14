@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "description": "Monokai's accent family, warm-shifted, expanded into a Flexoki-shaped tonal system.",
-  "author": "Patrick Serrano"
+  "author": "Patrick Serrano",
+  "authorUrl": "https://patrickserrano.com"
 }

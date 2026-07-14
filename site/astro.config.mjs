@@ -11,7 +11,11 @@ export default defineConfig({
 			title: 'Pyrokai',
 			description:
 				"Monokai's accent family, warm-shifted, expanded into a Flexoki-shaped tonal system.",
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/patrickserrano/pyrokai' }],
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/patrickserrano/pyrokai' },
+				{ icon: 'link', label: 'patrickserrano.com', href: 'https://patrickserrano.com' },
+				{ icon: 'link', label: 'Pixelfox Studio', href: 'https://pixelfoxstudio.com' },
+			],
 			customCss: [
 				'@fontsource-variable/inter',
 				'@fontsource/jetbrains-mono/400.css',
@@ -26,6 +30,7 @@ export default defineConfig({
 			components: {
 				ThemeProvider: './src/components/ThemeProvider.astro',
 				ThemeSelect: './src/components/ThemeSelect.astro',
+				Footer: './src/components/Footer.astro',
 			},
 		}),
 	],

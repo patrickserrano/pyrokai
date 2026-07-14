@@ -1,0 +1,26 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default><slot /></Default>
+
+<p class="pk-credit">
+	Pyrokai by <a href="https://patrickserrano.com">Patrick Serrano</a> at{' '}
+	<a href="https://pixelfoxstudio.com">Pixelfox Studio</a>
+</p>
+
+<style>
+	.pk-credit {
+		margin: 0 0 2rem;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+		text-align: center;
+	}
+	.pk-credit a {
+		color: var(--sl-color-gray-3);
+		text-decoration: underline;
+	}
+	.pk-credit a:hover {
+		color: var(--sl-color-white);
+	}
+</style>
